@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="82" id="KGk-i7-Jjw" customClass="MyProfileTableViewCell" customModule="BookYourGift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-OY-I1U">
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOp-yq-pGg">
+                                <rect key="frame" x="8" y="7" width="70" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnU-bs-8LK">
+                                <rect key="frame" x="177.66666666666666" y="7" width="69" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcY-dg-RJT">
+                                <rect key="frame" x="8" y="32" width="122" height="38"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bM-uw-doB">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2bM-uw-doB" firstAttribute="leading" secondItem="tcY-dg-RJT" secondAttribute="leading" id="2x0-Bn-cJh"/>
+                                    <constraint firstAttribute="bottom" secondItem="2bM-uw-doB" secondAttribute="bottom" id="cAV-gA-roR"/>
+                                    <constraint firstAttribute="width" constant="122" id="cM5-xB-pMJ"/>
+                                    <constraint firstAttribute="height" constant="38" id="kIa-Gr-Kxd"/>
+                                    <constraint firstAttribute="trailing" secondItem="2bM-uw-doB" secondAttribute="trailing" id="m67-Kq-pAJ"/>
+                                    <constraint firstItem="2bM-uw-doB" firstAttribute="top" secondItem="tcY-dg-RJT" secondAttribute="top" id="o00-77-GIM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMq-Iy-OtX">
+                                <rect key="frame" x="190" y="32" width="122" height="38"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8sz-R9-fWU">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8sz-R9-fWU" secondAttribute="bottom" id="I1B-Dj-yuE"/>
+                                    <constraint firstAttribute="trailing" secondItem="8sz-R9-fWU" secondAttribute="trailing" id="MzL-rO-CVZ"/>
+                                    <constraint firstItem="8sz-R9-fWU" firstAttribute="top" secondItem="VMq-Iy-OtX" secondAttribute="top" id="SJc-MP-S7D"/>
+                                    <constraint firstItem="8sz-R9-fWU" firstAttribute="leading" secondItem="VMq-Iy-OtX" secondAttribute="leading" id="a34-X6-5hV"/>
+                                    <constraint firstAttribute="height" constant="38" id="um3-y6-f9W"/>
+                                    <constraint firstAttribute="width" constant="122" id="ynd-cX-Z77"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VMq-Iy-OtX" firstAttribute="leading" secondItem="9FF-OY-I1U" secondAttribute="leading" constant="190" id="Chb-vA-BJL"/>
+                            <constraint firstItem="tcY-dg-RJT" firstAttribute="top" secondItem="IOp-yq-pGg" secondAttribute="bottom" constant="8" symbolic="YES" id="IpX-fG-Qq8"/>
+                            <constraint firstItem="IOp-yq-pGg" firstAttribute="top" secondItem="9FF-OY-I1U" secondAttribute="top" constant="7" id="Vks-FP-3Wm"/>
+                            <constraint firstItem="qnU-bs-8LK" firstAttribute="leading" secondItem="IOp-yq-pGg" secondAttribute="trailing" constant="99.666666666666671" id="Xll-vm-3SJ"/>
+                            <constraint firstItem="IOp-yq-pGg" firstAttribute="leading" secondItem="9FF-OY-I1U" secondAttribute="leading" constant="8" id="XzB-oT-wii"/>
+                            <constraint firstItem="tcY-dg-RJT" firstAttribute="leading" secondItem="9FF-OY-I1U" secondAttribute="leading" constant="8" id="iL4-vq-dsc"/>
+                            <constraint firstItem="qnU-bs-8LK" firstAttribute="centerY" secondItem="IOp-yq-pGg" secondAttribute="centerY" id="pKw-LZ-3ho"/>
+                            <constraint firstItem="VMq-Iy-OtX" firstAttribute="top" secondItem="qnU-bs-8LK" secondAttribute="bottom" constant="8" symbolic="YES" id="t5L-qY-vAC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9FF-OY-I1U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Inz-13-4dm"/>
+                    <constraint firstAttribute="trailing" secondItem="9FF-OY-I1U" secondAttribute="trailing" id="KLq-Wu-TIB"/>
+                    <constraint firstAttribute="bottom" secondItem="9FF-OY-I1U" secondAttribute="bottom" id="QXP-Sw-9Cs"/>
+                    <constraint firstItem="9FF-OY-I1U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qnd-nA-oVo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="firstNameLbl" destination="IOp-yq-pGg" id="Wxh-Fp-1aN"/>
+                <outlet property="firstNameTF" destination="2bM-uw-doB" id="C4b-Gv-ipj"/>
+                <outlet property="firstNameView" destination="tcY-dg-RJT" id="0ag-kh-T21"/>
+                <outlet property="lastNameLbl" destination="qnU-bs-8LK" id="y0c-2l-ecU"/>
+                <outlet property="lastNameTF" destination="8sz-R9-fWU" id="byy-Zj-seC"/>
+                <outlet property="lastNameView" destination="VMq-Iy-OtX" id="R4m-n4-qZ0"/>
+            </connections>
+            <point key="canvasLocation" x="111.45038167938931" y="2.1126760563380285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

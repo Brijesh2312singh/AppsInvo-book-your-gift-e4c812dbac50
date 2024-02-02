@@ -1,0 +1,6 @@
+framework module JDTabBarController {
+  umbrella header "JDTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}

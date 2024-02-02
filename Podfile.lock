@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (5.7.1)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - CountryPickerView (3.3.0)
+  - DropDown (2.3.13)
+  - HMSegmentedControl (1.5.6)
+  - IQKeyboardManager (6.5.12)
+  - JDTabBarController (1.0.1)
+  - SDWebImage (5.17.0):
+    - SDWebImage/Core (= 5.17.0)
+  - SDWebImage/Core (5.17.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - CountryPickerView
+  - DropDown
+  - HMSegmentedControl
+  - IQKeyboardManager
+  - JDTabBarController
+  - SDWebImage
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - CountryPickerView
+    - DropDown
+    - HMSegmentedControl
+    - IQKeyboardManager
+    - JDTabBarController
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  CountryPickerView: 6322ada32a80b0cd721b0267282a5c24f406f263
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
+  IQKeyboardManager: b1fd66ccf7a79095bdcc4a2735231586f744216e
+  JDTabBarController: 3af1790227c640f78dd2f50d0133098bbe4d1440
+  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 1f102bc0d887eefafc04d6290cb72959f3ee0f33
+
+COCOAPODS: 1.14.2

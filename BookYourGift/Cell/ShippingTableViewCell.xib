@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShippingTableViewCell" id="KGk-i7-Jjw" customClass="ShippingTableViewCell" customModule="BookYourGift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKJ-pv-npC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5C-nx-OYQ">
+                                <rect key="frame" x="30" y="5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="EzM-QZ-qnO"/>
+                                    <constraint firstAttribute="height" constant="24" id="lWW-RX-Vm8"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Veg"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RC 278 Khora Noida Sector 62A, Ghaziabad, Uttar Pradesh.201309" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yh-wB-9rQ">
+                                <rect key="frame" x="64" y="10" width="231" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z5C-nx-OYQ" firstAttribute="top" secondItem="9Yh-wB-9rQ" secondAttribute="top" constant="-5" id="TfT-Ig-Duk"/>
+                            <constraint firstItem="9Yh-wB-9rQ" firstAttribute="top" secondItem="iKJ-pv-npC" secondAttribute="top" constant="10" id="b1H-2l-sTN"/>
+                            <constraint firstItem="Z5C-nx-OYQ" firstAttribute="leading" secondItem="iKJ-pv-npC" secondAttribute="leading" constant="30" id="eX6-cn-b4P"/>
+                            <constraint firstAttribute="trailing" secondItem="9Yh-wB-9rQ" secondAttribute="trailing" constant="25" id="fDT-PW-i9J"/>
+                            <constraint firstItem="9Yh-wB-9rQ" firstAttribute="leading" secondItem="Z5C-nx-OYQ" secondAttribute="trailing" constant="10" id="iTF-1R-zkZ"/>
+                            <constraint firstAttribute="bottom" secondItem="9Yh-wB-9rQ" secondAttribute="bottom" constant="10" id="x0N-8I-lr4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iKJ-pv-npC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GYQ-sU-EhT"/>
+                    <constraint firstAttribute="bottom" secondItem="iKJ-pv-npC" secondAttribute="bottom" id="QQ2-Lv-nqN"/>
+                    <constraint firstItem="iKJ-pv-npC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rTL-H4-j4j"/>
+                    <constraint firstAttribute="trailing" secondItem="iKJ-pv-npC" secondAttribute="trailing" id="whx-KS-q0E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="radioBtn" destination="Z5C-nx-OYQ" id="sQk-Kh-AeX"/>
+                <outlet property="shippingLbl" destination="9Yh-wB-9rQ" id="pAV-UF-8Vg"/>
+            </connections>
+            <point key="canvasLocation" x="-279.38931297709922" y="-13.380281690140846"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Veg" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

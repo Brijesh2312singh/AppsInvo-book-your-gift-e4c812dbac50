@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailTableViewCell" rowHeight="76" id="KGk-i7-Jjw" customClass="EmailTableViewCell" customModule="BookYourGift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8L-iS-sW4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGP-CJ-YJE">
+                                <rect key="frame" x="8.0000000000000036" y="8" width="59.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-T3-gTV">
+                                <rect key="frame" x="8" y="28" width="304" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tr2-YF-pGv">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tr2-YF-pGv" firstAttribute="top" secondItem="4kF-T3-gTV" secondAttribute="top" id="BhR-Si-pT7"/>
+                                    <constraint firstAttribute="height" constant="40" id="G0j-I1-s4i"/>
+                                    <constraint firstAttribute="trailing" secondItem="tr2-YF-pGv" secondAttribute="trailing" id="OM2-iZ-lcl"/>
+                                    <constraint firstItem="tr2-YF-pGv" firstAttribute="leading" secondItem="4kF-T3-gTV" secondAttribute="leading" id="vlz-Tf-KsF"/>
+                                    <constraint firstAttribute="bottom" secondItem="tr2-YF-pGv" secondAttribute="bottom" id="zyt-We-VCa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4kF-T3-gTV" firstAttribute="leading" secondItem="f8L-iS-sW4" secondAttribute="leading" constant="8" id="BoW-Ns-GTV"/>
+                            <constraint firstItem="vGP-CJ-YJE" firstAttribute="leading" secondItem="f8L-iS-sW4" secondAttribute="leading" constant="8" id="UAl-Js-jLr"/>
+                            <constraint firstItem="4kF-T3-gTV" firstAttribute="top" secondItem="f8L-iS-sW4" secondAttribute="top" constant="28" id="bWP-es-vGQ"/>
+                            <constraint firstItem="vGP-CJ-YJE" firstAttribute="top" secondItem="f8L-iS-sW4" secondAttribute="top" constant="8" id="ffN-c6-73P"/>
+                            <constraint firstAttribute="trailing" secondItem="4kF-T3-gTV" secondAttribute="trailing" constant="8" id="rtk-5p-z7x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="f8L-iS-sW4" secondAttribute="trailing" id="Oyn-wR-6ME"/>
+                    <constraint firstItem="f8L-iS-sW4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QLg-rZ-h6U"/>
+                    <constraint firstItem="f8L-iS-sW4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aRZ-WV-WRd"/>
+                    <constraint firstAttribute="bottom" secondItem="f8L-iS-sW4" secondAttribute="bottom" id="tWd-TP-l54"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLbl" destination="vGP-CJ-YJE" id="BNf-eT-Dx3"/>
+                <outlet property="emailTF" destination="tr2-YF-pGv" id="cV5-Qa-rpJ"/>
+                <outlet property="emailView" destination="4kF-T3-gTV" id="Rsj-c2-f9L"/>
+            </connections>
+            <point key="canvasLocation" x="-50.381679389312978" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

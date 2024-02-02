@@ -1,0 +1,3 @@
+main Colro -#E50041 
+Heading Color - #2B3233
+font - Poppins
